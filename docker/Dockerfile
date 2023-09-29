@@ -1,8 +1,8 @@
 ##########################################
 # Dockerfile for TD-MPC2                 #
-# TD-MPC2 Anonomyous Authors, 2023 (c)   #
+# TD-MPC2 Anonymous Authors, 2023 (c)    #
 # -------------------------------------- #
-# Intructions:                           #
+# Instructions:                          #
 # docker build . -t <user>/tdmpc2:0.1.0  #
 # docker push <user>/tdmpc2:0.1.0        #
 ##########################################
@@ -50,7 +50,7 @@ ENV LD_LIBRARY_PATH /root/.mujoco/mujoco210/bin:${LD_LIBRARY_PATH}
 
 # mujoco (required for metaworld)
 RUN mkdir -p /root/.mujoco && \
-    wget https://www.roboti.us/file/mjkey.txt && \
+    wget https://www.tdmpc2.com/files/mjkey.txt && \
     wget https://github.com/deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz && \
     tar -xzf mujoco210-linux-x86_64.tar.gz && \
     rm mujoco210-linux-x86_64.tar.gz && \

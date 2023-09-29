@@ -62,6 +62,6 @@ dependencies:
     - plotly
     - pyquaternion
     - git+https://github.com/Farama-Foundation/Metaworld.git@04be337a12305e393c0caf0cbf5ec7755c7c8feb
-    - myosuite
+    # - myosuite # MyoSuite requires gym==0.13.0 which conflicts with Meta-World & ManiSkill2, install separately if needed
     - tensordict-nightly
     - torchrl-nightly

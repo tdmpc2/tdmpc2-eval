@@ -15,7 +15,7 @@ Code for training TD-MPC2 agents will be released at a later date.
 
 ## Getting started
 
-You will need a machine with a GPU and at least 12 GB of RAM. A GPU with at least 8 GB of memory is required for evaluation of the 317M parameter models. Training the models from scratch requires significantly more resources.
+You will need a machine with a GPU and at least 12 GB of RAM. A GPU with at least 8 GB of memory is required for evaluation of the 317M parameter models.
 
 We provide a `Dockerfile` for easy installation. You can build the docker image by running
 
@@ -41,9 +41,13 @@ which downloads assets to `./data`. You may move these assets to any location. T
 export MS2_ASSET_DIR=<path>/<to>/<data>
 ```
 
-and restart your terminal. Meta-World additionally requires MuJoCo 2.1.0. See `docker/Dockerfile` for installation instructions if you do not already have MuJoCo 2.1.0 installed.
+and restart your terminal. Meta-World additionally requires MuJoCo 2.1.0. We host the unrestricted MuJoCo 2.1.0 license (courtesy of Google DeepMind) at [https://www.tdmpc2.com/files/mjkey.txt](https://www.tdmpc2.com/files/mjkey.txt). You can download the license by running
 
-Depending on your existing system packages, you may need to install additional dependencies. See `docker/Dockerfile` for a list of recommended system packages.
+```
+wget https://www.tdmpc2.com/files/mjkey.txt -O ~/.mujoco/mjkey.txt
+```
+
+See `docker/Dockerfile` for installation instructions if you do not already have MuJoCo 2.1.0 installed. MyoSuite requires `gym==0.13.0` which is incompatible with Meta-World and ManiSkill2. Install separately with `pip install myosuite` if desired. Depending on your existing system packages, you may need to install other dependencies. See `docker/Dockerfile` for a list of recommended system packages.
 
 ----
 
