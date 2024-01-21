@@ -1,6 +1,10 @@
 # TD-MPC2 Evaluation
 
-*Anonymized in compliance with ICLR 2024 submission guidelines.*<br/><br/>
+**(Jan 2024) Announcement: TD-MPC2 has been accepted at ICLR 2024! Visit [https://github.com/nicklashansen/tdmpc2](https://github.com/nicklashansen/tdmpc2) for the de-anonymized and actively maintained repository.**
+
+----
+
+*This repository is anonymized in compliance with ICLR 2024 submission guidelines.*<br/><br/>
 
 Evaluation repository for the [TD-MPC2](https://www.tdmpc2.com) project by
 
